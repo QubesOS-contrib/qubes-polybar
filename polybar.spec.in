@@ -10,8 +10,8 @@
 %global url1    https://github.com/%{name}
 
 Name:           polybar
-Version:        3.4.2
-Release:        2%{?dist}
+Version:        @VERSION@
+Release:        @REL@%{?dist}
 Summary:        Fast and easy-to-use status bar
 
 # BSD 2-clause "Simplified" License
@@ -111,15 +111,4 @@ install -m 0644 -Dp doc/%{_target_platform}/man/%{name}.1 \
 
 
 %changelog
-* Sat Dec 28 2019 Artem Polishchuk <ego.cordatus@gmail.com> - 3.4.2-2
-- Replace wireless-tools-devel with libnl3-devel (upstream recommendation)
-
-* Fri Dec 27 2019 Artem Polishchuk <ego.cordatus@gmail.com> - 3.4.2-1
-- Update to 3.4.2
-
-* Sat Dec 21 2019 Artem Polishchuk <ego.cordatus@gmail.com> - 3.4.1-4
-- Update to 3.4.1
-- Packaging fixes
-
-* Thu Sep 05 2019 Franco Comida <fcomida@users.sourceforge.net> - 3.4.0-1
-- Version 3.4.0
+@CHANGELOG@
